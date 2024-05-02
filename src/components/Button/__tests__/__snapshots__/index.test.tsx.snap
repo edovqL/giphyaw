@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Test components: Button > Snapshot 1`] = `
+<div>
+  <button
+    class="btn btn-active btn-primary items-center text-lg"
+  >
+     
+  </button>
+</div>
+`;

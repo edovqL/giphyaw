@@ -1,0 +1,20 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Test components: Hero > Snapshot 1`] = `
+<div>
+  <div
+    class="flex justify-between"
+  >
+    <span
+      class="text-lg font-bold text-teal-400"
+    >
+      Powered by Giphy.com
+    </span>
+    <span
+      class="italic text-amber-400"
+    >
+      @alpredovandy
+    </span>
+  </div>
+</div>
+`;

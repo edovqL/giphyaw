@@ -1,0 +1,22 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Test components: Empty > Snapshot 1`] = `
+<div>
+  <div
+    class="card w-full bg-gradient-to-b from-red-50 to-red-100 shadow-xl"
+  >
+    <div
+      class="card-body items-center text-red-500"
+    >
+      <h2
+        class="card-title"
+      >
+        Data not found!
+      </h2>
+      <p>
+        Please search or click tab
+      </p>
+    </div>
+  </div>
+</div>
+`;
