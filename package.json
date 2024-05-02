@@ -10,8 +10,8 @@
     "preview": "vite preview",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "precommit": "lint-staged",
-    "prepare": "husky"
+    "precommit": "yarn lint && yarn test",
+    "prepare": "npx husky init"
   },
   "husky": {
     "hooks": {

@@ -31,8 +31,8 @@ describe('Test @/services/adapters: HTTPClient', () => {
         });
     });
 
-    const getDeleteCases: TestCases[] = [['get', 'GET', mockGet]];
-    it.each(getDeleteCases)('%s: should call api with method %s', (fn, _, mockFn) => {
+    const getCases: TestCases[] = [['get', 'GET', mockGet]];
+    it.each(getCases)('%s: should call api with method %s', (fn, _, mockFn) => {
         httpClient()[fn]('mock-path', {
             params: { id: 'mock-id' },
         });
