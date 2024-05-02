@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 
 import { MOCK_GIFS } from '@/domains/__mocks__/Gif.ts';
 import type { CatalogProps } from '@/modules/home/types';
@@ -20,6 +20,7 @@ describe('Test Home/section: Catalog', () => {
         renderCatalog({
             gifs: [],
             isPending: true,
+            loadAction: vi.fn(),
         });
     });
 });

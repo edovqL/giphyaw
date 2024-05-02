@@ -10,7 +10,7 @@ const Catalog: FC<CatalogProps> = ({ gifs, isPending, loadAction }) => {
         return (
             <div className="grid flex-auto md:grid-cols-2 xl:grid-cols-3 flex-wrap gap-2">
                 {new Array(12).fill(0).map((_, index) => (
-                    <Card key={index} isLoading={true} />
+                    <Card key={index} data={{}} isLoading={true} />
                 ))}
             </div>
         );
@@ -20,7 +20,7 @@ const Catalog: FC<CatalogProps> = ({ gifs, isPending, loadAction }) => {
             {gifs?.length > 0 ? (
                 <>
                     <div className="grid flex-auto md:grid-cols-2 xl:grid-cols-3 flex-wrap gap-2">
-                        {gifs?.map((gif, index) => <Card key={index} data={gif} isLoading={isPending} />)}
+                        {gifs?.map((gif) => <Card key={gif.id} data={gif} isLoading={isPending} />)}
                     </div>
                     <Button title="Load more" onAction={loadAction} isLoading={isPending} />
                 </>

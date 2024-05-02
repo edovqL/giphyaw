@@ -1,6 +1,4 @@
-import { dataGifType } from '@/domains/Gif.ts';
-
 export interface CardProps {
-    data?: dataGifType;
+    data: Record<string, any>;
     isLoading?: boolean;
 }
