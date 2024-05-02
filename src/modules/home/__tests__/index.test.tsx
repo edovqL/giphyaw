@@ -6,8 +6,6 @@ import { CatalogProps } from '@/modules/home/types';
 
 import Home from '..';
 
-vi.mock('@/contexts/Modal/context');
-
 const mockCatalog = vi.fn();
 vi.mock('@/modules/home/sections/Catalog', () => ({
     default: (props: CatalogProps) => {

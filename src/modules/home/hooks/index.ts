@@ -16,7 +16,7 @@ export const useGifsQuery = (params: PaginateRequestType) => {
 
     useEffect(() => {
         if (query.isError) {
-            showErrorMessage({ message: query.error.message });
+            showErrorMessage({ message: 'Oops, something went wrong!' });
         }
     }, [query.isError]);
 
