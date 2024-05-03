@@ -6,10 +6,10 @@ exports[`@/modules: Home > Snapshot 1`] = `
     class="flex flex-col gap-5 w-1/2"
   >
     <div
-      class="flex justify-between"
+      class="flex justify-between items-center"
     >
       <span
-        class="text-lg font-bold text-teal-400"
+        class="text-md font-bold text-teal-400"
       >
         Powered by Giphy.com
       </span>
@@ -45,10 +45,10 @@ exports[`@/modules: Home > Snapshot 1`] = `
       role="tablist"
     >
       <a
-        class="tab "
+        class="tab tab-active"
         role="tab"
       >
-        Categories
+        Popular
       </a>
       <a
         class="tab "

@@ -20,6 +20,7 @@ class GifUseCase implements GifUseCaseType {
 
         if (type !== TYPE.CATEGORIES)
             return {
+                ...response,
                 data: response.data.map((gif) => ({
                     gif: gif,
                 })),

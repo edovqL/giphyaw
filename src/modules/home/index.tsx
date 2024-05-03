@@ -33,11 +33,11 @@ const Home = () => {
             />
             <Tab onType={(value) => onChangeEvent(value, 'type')} value={state.type} items={TAB_LIST} />
             <Catalog
-                gifs={
-                    // @ts-ignore
-                    gifs?.data ?? []
-                }
-                loadAction={() => onChangeEvent(state.limit + 10, 'limit')}
+                // @ts-ignore
+                gifs={gifs?.data ?? []}
+                // @ts-ignore
+                showButton={gifs?.data?.length < gifs?.pagination?.total_count}
+                loadButton={() => onChangeEvent(state.limit + 10, 'limit')}
                 isPending={isPending}
             />
         </div>

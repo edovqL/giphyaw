@@ -1,7 +1,8 @@
 export interface CatalogProps {
     gifs: Record<string, any>[];
     isPending: boolean;
-    loadAction: () => void;
+    loadButton: () => void;
+    showButton: boolean;
 }
 
 export interface TabListProps {

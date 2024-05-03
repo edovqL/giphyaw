@@ -3,10 +3,10 @@
 exports[`Test components: Hero > Snapshot 1`] = `
 <div>
   <div
-    class="flex justify-between"
+    class="flex justify-between items-center"
   >
     <span
-      class="text-lg font-bold text-teal-400"
+      class="text-md font-bold text-teal-400"
     >
       Powered by Giphy.com
     </span>

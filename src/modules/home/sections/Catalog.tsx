@@ -5,12 +5,12 @@ import Card from '@/components/Card';
 import Empty from '@/components/Empty';
 import { CatalogProps } from '@/modules/home/types.ts';
 
-const Catalog: FC<CatalogProps> = ({ gifs, isPending, loadAction }) => {
+const Catalog: FC<CatalogProps> = ({ gifs, isPending, loadButton, showButton = true }) => {
     if (isPending)
         return (
             <div className="grid flex-auto md:grid-cols-2 xl:grid-cols-3 flex-wrap gap-2">
                 {new Array(12).fill(0).map((_, index) => (
-                    <Card key={index} data={{}} isLoading={true} />
+                    <Card key={`skeleton-${index}`} data={{}} isLoading={true} />
                 ))}
             </div>
         );
@@ -20,9 +20,9 @@ const Catalog: FC<CatalogProps> = ({ gifs, isPending, loadAction }) => {
             {gifs?.length > 0 ? (
                 <>
                     <div className="grid flex-auto md:grid-cols-2 xl:grid-cols-3 flex-wrap gap-2">
-                        {gifs?.map((gif) => <Card key={gif.id} data={gif} isLoading={isPending} />)}
+                        {gifs?.map((gif) => <Card key={gif?.slug} data={gif} isLoading={isPending} />)}
                     </div>
-                    <Button title="Load more" onAction={loadAction} isLoading={isPending} />
+                    {showButton && <Button title="Load more" onAction={loadButton} isLoading={isPending} />}
                 </>
             ) : (
                 <Empty />

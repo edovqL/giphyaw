@@ -20,7 +20,8 @@ describe('Test Home/section: Catalog', () => {
         renderCatalog({
             gifs: [],
             isPending: true,
-            loadAction: vi.fn(),
+            loadButton: vi.fn(),
+            showButton: true,
         });
     });
 });
