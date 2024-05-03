@@ -1,4 +1,4 @@
-# Graphyaw
+# Giphyaw
 
 This project build using Stack:
 
@@ -11,7 +11,7 @@ This project build using Stack:
 - daisyUI
 - Axios
 - Zod
-- Graphy API
+- Giphy API
 
 ## Scripts
 
