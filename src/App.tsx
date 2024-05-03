@@ -1,22 +1,14 @@
 import { useState } from 'react';
 
-import { QueryClient, type QueryClientConfig, QueryClientProvider } from '@tanstack/react-query';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 
+import { QUERY_CLIENT_OPTIONS } from '@/constants/queryClient.ts';
 import MessageProvider from '@/contexts/Message/provider';
 import Home from '@/modules/home';
 
-const queryClientOptions: QueryClientConfig = {
-    defaultOptions: {
-        queries: {
-            refetchOnWindowFocus: false,
-            refetchOnReconnect: false,
-            retry: false,
-        },
-    },
-};
 const App = () => {
-    const [queryClient] = useState(() => new QueryClient(queryClientOptions));
+    const [queryClient] = useState(() => new QueryClient(QUERY_CLIENT_OPTIONS));
 
     return (
         <QueryClientProvider client={queryClient}>
