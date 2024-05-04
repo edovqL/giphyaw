@@ -23,7 +23,7 @@ const Home = () => {
     };
 
     return (
-        <div className="flex flex-col gap-5 w-1/2">
+        <div className="flex flex-col gap-5 lg:w-2/3">
             <Hero />
             <SearchBox
                 value={state.search}
