@@ -10,7 +10,7 @@ exports[`Test Home/section: Catalog > Snapshot 1`] = `
     >
       <img
         alt="Shoes"
-        class="object-fill h-32 w-full rounded relative"
+        class="object-fill h-40 w-full rounded relative"
         src="https://media2.giphy.com/media/3o6wrvdHFbwBrUFenu/giphy-preview.gif"
       />
       <button

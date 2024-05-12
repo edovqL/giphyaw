@@ -7,7 +7,7 @@ exports[`Test components: Card > Snapshot 1`] = `
   >
     <img
       alt="Shoes"
-      class="object-fill h-32 w-full rounded relative"
+      class="object-fill h-40 w-full rounded relative"
     />
     <button
       class="absolute top-0 right-0 left-0 bottom-0 text-white font-bold"

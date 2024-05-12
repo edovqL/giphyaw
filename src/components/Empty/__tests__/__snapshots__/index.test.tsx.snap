@@ -13,9 +13,6 @@ exports[`Test components: Empty > Snapshot 1`] = `
       >
         Data not found!
       </h2>
-      <p>
-        Please search or click tab
-      </p>
     </div>
   </div>
 </div>

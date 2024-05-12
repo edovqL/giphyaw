@@ -3,7 +3,7 @@
 exports[`@/modules: Home > Snapshot 1`] = `
 <div>
   <div
-    class="flex flex-col gap-5 w-1/2"
+    class="flex flex-col gap-5 lg:w-2/3"
   >
     <div
       class="flex justify-between items-center"
